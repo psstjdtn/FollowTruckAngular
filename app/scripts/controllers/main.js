@@ -13,7 +13,7 @@ angular.module('angularJsexamApp')
   		return {
   			getData : function(url) {
   				var defered = $q.defer();
-  				$http({
+  				$http({ 
   					method:'GET', url:url,
   					headers:{
   						'Content-Type':
@@ -44,7 +44,7 @@ angular.module('angularJsexamApp')
   			modifyData : function(url, data) {
   				var defered = $q.defer();
   				$http({
-  					method:'POST', url:url, data:data,
+  					method:'PUT', url:url, data:data,
   					headers:{
   						'Content-Type':
   						'application/x-www-form-urlencoded'
